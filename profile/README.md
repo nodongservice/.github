@@ -357,3 +357,9 @@ React Frontend
 - HSTS/Frame-Deny/Content-Type-Options 보안 헤더 적용
 - OCR 업로드 파일 MIME/PDF 시그니처/용량 검증 후 중계
 - 운영 시크릿은 환경변수로 분리(`application-prod.yml` `${...}`)
+
+## 역할분담
+* 박민정 (Leader): Frontend, FastAPI Development
+* 최성현: Backend, Infrastructure
+* 장혜진: Project Planning
+* 김수인: UI/UX Design
