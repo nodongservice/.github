@@ -176,6 +176,8 @@ React Frontend
 - 탈퇴 신청(PENDING_DELETION) 계정 로그인 시 토큰 발급 없이 계정 상태/탈퇴 예정 시각/탈퇴취소 토큰 반환
 - 탈퇴 신청 취소 시 계정 ACTIVE 복구 및 토큰 재발급
 
+<img width="720" alt="온보딩 및 맞춤 필터 설계 화면 예시" src="../images/1.onboarding.png" />
+
 ### 기능 1. 프로필 생성/관리
 
 - 직접 입력 저장
@@ -183,6 +185,8 @@ React Frontend
   - 입력 시 포트폴리오 파일 업로드 -> Spring 파일 검증/중계 -> FastAPI OCR + LLM으로 프로필 초안 생성
 - 프로필 최대 3개 관리
 - 기본 프로필 지정/변경
+
+<img width="720" alt="AI 기반 사용자 조건 구조화 및 프로필 생성 화면 예시" src="../images/2.profile.png" />
 
 ### 기능 1-1. 회원 탈퇴
 
@@ -205,6 +209,10 @@ React Frontend
    - Spring이 DB 공고 최신순 반환
    - 프론트가 화면 필터 적용
 
+<img width="920" alt="AI 기반 맞춤형 일자리 추천 기능 공고 목록 화면 예시" src="../images/3.quick_list.png" />
+<img width="920" alt="AI 기반 맞춤형 일자리 추천 기능 공고 필터 화면 예시" src="../images/3.quick_filter.png" />
+<img width="920" alt="AI 기반 맞춤형 일자리 추천 기능 공고 상세 화면 예시" src="../images/3.detail.png" />
+
 ### 기능 3. 지역 접근성 지도 추천 (종합 점수)
 
 지도상에 공고 + 기업정보를 나타내며 추가로 근로지원인 수행기관 마커를 함께 표시한다. (백엔드 API)
@@ -224,6 +232,13 @@ React Frontend
    - Spring이 DB 공고 반환
    - 프론트가 화면 필터 적용
 
+<img width="920" alt="지역 기반 접근성 지도 서비스 화면 예시" src="../images/5.screen.png" />
+
+<p>
+  <img width="300" alt="지역 기반 접근성 지도 서비스 상세정보 요약 예시" src="../images/5.info.png" />
+  <img width="300" alt="지역 기반 접근성 지도 서비스 공고정보 예시" src="../images/5.info2.png" />
+</p>
+
 ### 기능 4. 공고 추천 설명/체크리스트 + 훈련·역량 프로그램 연계
 
 - 선택 프로필과 공고/점수 정보를 바탕으로 추천 사유, 주의사항, 체크리스트 생성
@@ -233,10 +248,26 @@ React Frontend
   - 국민내일배움카드 직업훈련 과정
   - 구직자 취업역량 강화 프로그램
 
+<img width="420" alt="지역 기반 접근성 지도 서비스 역량 강화 교육 추천 예시" src="../images/5.class.png" />
+
 ### 기능 5. 실시간 인기 공고 / 스크랩
 
 - 공고 상세 조회, 인기 공고 조회
 - 공고 스크랩/해제, 내 스크랩 목록 조회
+
+<img width="920" alt="TOP 인기 20개 공고 추천 화면 예시" src="../images/6.star.png" />
+
+<img width="420" alt="스크랩 공고 관리 화면 예시" src="../images/6.scrap.png" />
+
+### 기능 6. 웹 접근성 및 UI/UX 확장 가능성
+
+- 지역 기반 접근성 지도 서비스는 모바일 화면에서도 공고 위치, 접근성 요약, 상세 정보를 확인할 수 있도록 확장 가능
+- 홈 화면에서는 스크랩 공고와 퀵 공고 접근을 함께 제공해 핵심 탐색 동선을 단축
+
+<p>
+  <img width="280" alt="지역 기반 접근성 지도 서비스 모바일 화면 예시" src="../images/mobile.png" />
+  <img width="280" alt="홈 화면 스크랩 및 퀵 공고 서비스 모바일 화면 예시" src="../images/mobile2.png" />
+</p>
 
 ---
 
